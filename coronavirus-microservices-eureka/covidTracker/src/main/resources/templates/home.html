@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Coronavirus tracker application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <h1>Coronavirus Tracker</h1>
+    <p class="lead">Total number of Coronavirus cases world-wide as of <span th:text="${#temporals.format(localDate, 'dd-MM-yyyy')}"></span>: <span th:text="${#numbers.formatInteger(totalGlobalCases,3,'COMMA')}"></span></p>
+</div>
+<table class="table table-bordered">
+    <tr class="thead-dark">
+        <th>Country</th>
+        <th>Latest Total Cases</th>
+    </tr>
+    <tr th:each="locationStat : ${locationStats}">
+        <td th:text="${locationStat.country}"></td>
+        <td th:text="${#numbers.formatInteger(locationStat.latestTotalCases,3,'COMMA')}"></td>
+
+    </tr>
+</table>
+
+</body>
+
+</html>
