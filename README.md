@@ -25,14 +25,14 @@ To run the application, perform the following steps in sequence:
 3) Start the Primary-data-service 
 4) Start the CovidTracker service 
 
-Screenshot of Eureka endpoint below:
-
-![Eureka_edit2](https://user-images.githubusercontent.com/15854708/114520422-4497ef00-9bf6-11eb-933f-9e259c951bc2.jpg)
-
 Once all the services are up, the following endpoints are available:
 1) Eureka endpoint at http://localhost:8761
 2) Hystrix dashboard at http://localhost:8090/hystrix
   and Hystrix Stream: http://localhost:8090/turbine/turbine.stream
 3) The webpage with the total cases globally and a country-wise breakdown on http://localhost:8090
+
+Screenshot of Eureka endpoint below:
+
+![Eureka_edit2](https://user-images.githubusercontent.com/15854708/114520422-4497ef00-9bf6-11eb-933f-9e259c951bc2.jpg)
 
 To demo the circuit breaker, bring down the Primary-data-service and then request the webpage.
