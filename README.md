@@ -1,7 +1,7 @@
 # CoronavirusTracker
 Displays a webpage with a country-wise breakdown of Coronavirus cases globally.
 
-![Coronavirus Tracker UI_1](https://user-images.githubusercontent.com/15854708/114519775-9429eb00-9bf5-11eb-8cf2-04b23ee0466d.jpg)
+![CoronavirusUI_edit1](https://user-images.githubusercontent.com/15854708/114520116-f2ef6480-9bf5-11eb-9f6b-af7e60383232.jpg)
 
 The application fetches data from the Johns Hopkins University (JHU) repository. 
 
