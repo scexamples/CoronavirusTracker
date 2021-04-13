@@ -1,6 +1,8 @@
 # CoronavirusTracker
 Displays a webpage with a country-wise breakdown of Coronavirus cases globally.
 
+![Coronavirus Tracker UI_edit1](https://user-images.githubusercontent.com/15854708/114518824-9c355b00-9bf4-11eb-81fd-8f78ea141a8c.jpg)
+
 The application fetches data from the Johns Hopkins University (JHU) repository. 
 
 This is a Spring boot application with three microservices (excluding the Eureka discovery service) that interact through REST calls:
